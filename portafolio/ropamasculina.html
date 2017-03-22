@@ -61,6 +61,36 @@
 <link rel="shortcut icon" href="favicon.ico"/>
 </head>
 <body class="c-layout-header-fixed">
+	<div class="zoom" id="zoom1">
+    <div class="container">
+      <div class="row">
+        <button class='btnCerrar'>Cerrar</button>
+      </div>
+      <div class="row">
+        <img src="../assets/base/img/portafolio/ropamasculina-1.jpg" alt="">
+      </div>
+    </div>
+  </div>
+  <div class="zoom" id="zoom2">
+    <div class="container">
+      <div class="row">
+        <button class='btnCerrar'>Cerrar</button>
+      </div>
+      <div class="row">
+        <img src="../assets/base/img/portafolio/ropamasculina-2.jpg" alt="">
+      </div>
+    </div>
+  </div>
+  <div class="zoom" id="zoom3">
+    <div class="container">
+      <div class="row">
+        <button class='btnCerrar'>Cerrar</button>
+      </div>
+      <div class="row">
+        <img src="../assets/base/img/portafolio/ropamasculina-3.jpg" alt="">
+      </div>
+    </div>
+  </div>
 <!-- BEGIN: LAYOUT/HEADERS/HEADER-1 -->
 <!-- BEGIN: HEADER -->
 <header class="c-layout-header c-layout-header-3 c-layout-header-3-custom-menu c-layout-header-default-mobile">
@@ -192,22 +222,22 @@
 				</div>
 			</div>
 			<div class="row aate-views">
-						<div class="col-sm-12 col-md-4">
-							<a href="#" id="view1">
-								<img src="../assets/base/img/portafolio/ropamasculina-1.jpg" alt="">
-							</a>
-						</div>
-						<div class="col-sm-12 col-md-4">
-							<a href="#" id="view2">
-								<img src="../assets/base/img/portafolio/ropamasculina-2.jpg" alt="">
-							</a>
-						</div>
-						<div class="col-sm-12 col-md-4">
-							<a href="#" id="view3">
-								<img src="../assets/base/img/portafolio/ropamasculina-3.jpg" alt="">
-							</a>
-						</div>
-					</div>
+				<div class="col-sm-12 col-md-4">
+					<a id="fire1" href="#" id="view1">
+						<img src="../assets/base/img/portafolio/ropamasculina-1.jpg" alt="">
+					</a>
+				</div>
+				<div class="col-sm-12 col-md-4">
+					<a id="fire2" href="#" id="view2">
+						<img src="../assets/base/img/portafolio/ropamasculina-2.jpg" alt="">
+					</a>
+				</div>
+				<div class="col-sm-12 col-md-4">
+					<a id="fire3" href="#" id="view3">
+						<img src="../assets/base/img/portafolio/ropamasculina-3.jpg" alt="">
+					</a>
+				</div>
+			</div>
 		</div>
 	<!-- END: PROYECTOS -->
 	<!-- END: PAGE CONTENT -->
@@ -300,6 +330,23 @@
 	        hideThumbsUnderResolution: 0
 	    });
 	});
+$('#fire1').on('click', function(e) {
+		$('header, footer, .c-layout-page').addClass('difuminado')
+		$('#zoom1').css('display','block')
+	})
+	$('#fire2').on('click', function(e) {
+		$('header, footer, .c-layout-page').addClass('difuminado')
+		$('#zoom2').css('display','block')
+	})
+	$('#fire3').on('click', function(e) {
+		$('header, footer, .c-layout-page').addClass('difuminado')
+		$('#zoom3').css('display','block')
+	})
+	$('.btnCerrar').on('click', function(e) {
+		e.preventDefault()
+		$('header, footer, .c-layout-page').removeClass('difuminado')
+		$('.zoom').css('display','none')
+	})
 	</script>
 <!-- END: THEME SCRIPTS -->
 <!-- END: LAYOUT/BASE/BOTTOM -->
