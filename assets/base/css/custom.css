@@ -50,3 +50,25 @@
 #primero:hover .primero {
 	display: block;
 }
+
+.aate-head {
+	padding-left: 5vw;
+	padding-right: 5vw;
+}
+
+.aate-head-img {
+	margin-bottom: 50px;
+}
+.aate-head-img img{
+	width: 100%;
+}
+.aate-head-txt h1 {
+	text-align: center;
+}
+.aate-views {
+	padding-right: 2vw;
+	padding-left: 2vw;
+}
+.aate-views div img {
+	width: 100%;
+}
