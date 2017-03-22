@@ -1,0 +1,52 @@
+.cursiva{
+	font-style: italic;
+}
+.centrado{
+	text-align: center;
+}
+.margen-fondo{
+	margin-bottom:20px;
+}
+.margen-arriba{
+	margin-top: 30px;
+}
+.medio{
+	vertical-align: middle;
+}
+.espaciado{
+	line-height: 25px;
+}
+.color-apple{
+	color: #ccc !important;
+}
+
+.portafolio-thumbs div {
+	overflow: hidden;
+	max-height: 200px;
+	padding-left: 0px !important;
+	padding-right: 0px !important;
+}
+.portafolio-thumbs div img {
+	width: 100%;
+	height: 100%;
+}
+
+.portafolio-thumbs div img:hover {
+	transition: 1s;
+	filter: blur(6px);
+}
+
+.portafolio-footer {
+	margin-top: 100px !important;
+}
+.portafolio-thumbs div a h3 {
+	display: none;
+}
+
+.portafolio-thumbs div a[child-nth:1]:hover h3 {
+	display:block;
+}
+
+#primero:hover .primero {
+	display: block;
+}
