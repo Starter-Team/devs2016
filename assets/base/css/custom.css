@@ -73,6 +73,10 @@
 .aate-views div img {
 	width: 100%;
 }
+.aate-views div {
+	max-height: 300px;
+	overflow: hidden;
+}
 .zoom {
 	display: none;
 	width: 100%;
